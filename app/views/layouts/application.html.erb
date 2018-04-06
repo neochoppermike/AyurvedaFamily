@@ -5,8 +5,8 @@
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!--link to Bootstrap (for styling) before link to local custom style sheet-->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
 
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for responsive app-->
   </head>
 
-  <body>
+  <body style = "margin:0">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,43 +34,37 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to "Home", root_path, class: "active" %></li>
-              <li><%= link_to "About", static_pages_about_path %></li>
-              <li><li><%= link_to "Blog", static_pages_index_path %></li></li>
-              <li><%= link_to "Videos", static_pages_videos_path %></li>
-              <li><%= link_to "Contact", static_pages_contact_path %></a></li>   
+              <li><%= link_to "HOME", root_path, class: "active" %></li>
+              <li><%= link_to "ABOUT", static_pages_about_path %></li>
+              <li><li><%= link_to "BLOG", posts_path %></li></li>
+              <li><%= link_to "VIDEOS", static_pages_videos_path %></li>
+              <li><%= link_to "CONTACT", static_pages_contact_path %></a></li>   
             </ul>
           </div> <!--/navbar collapse-->
         </div> <!--/container fluid-->
       </nav>  
   
-
-    <%= yield %>
+    <div class="page-body">
+      <%= yield %>
+    </div>
     
     <footer>
       <div class="container-fluid site-footer">
-      	 <div class="row">
+      	<div class="row">
           <div class="col-md-6 copyright">
               &copy; 2018 AyurvedaFamily
           </div>
-        
-
-
-
-        <div class="row">
           <div class="col-sm-6 search">
-          
-              <%= form_with(url: static_pages_index_path && static_pages_videos_path, method: 'get', local: true) do |form| %>
+            <%= form_with(url: static_pages_index_path && static_pages_videos_path, method: 'get', local: true) do |form| %>
                           
               <div class="input-group"> 
-                  <%= form.text_field :q, id: 'q', class: "form-control", value: params[:q], placeholder: "Search for..."   %>
+                <%= form.text_field :q, id: 'q', class: "form-control", value: params[:q], placeholder: "Search for..."   %>
                 
-              <span class="input-group-btn">              
-              <%= form.submit 'Search', class: "btn btn-default" %>
-              </span>  
-               </div>        
-              <% end %>
-               
+                <span class="input-group-btn">              
+                <%= form.submit 'Search', class: "btn btn-default" %>
+                </span>  
+              </div>        
+            <% end %>                
           </div>
         </div>
       </div>
