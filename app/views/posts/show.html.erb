@@ -1,18 +1,14 @@
-<p id="notice"><%= notice %></p>
-<p>
-  <%= image_tag @post.image_url, class: "img-responsive"%>
-</p>
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="show-wrap">
+  <p>
+    <%= image_tag @post.image_url, class: "img-responsive"%>
+  </p>
+  <p>
+    <strong><%= @post.title %></strong>
+  </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
+  <p>
+    <%= @post.body %>
+  </p>
+  <br/>
 
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+</div>

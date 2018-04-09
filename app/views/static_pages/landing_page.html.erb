@@ -1,10 +1,57 @@
-
-<div class="landing_page_container">
-  <%= image_tag("ayurveda.jpg", class: "img-responsive") %>
-  <div class="centered">
-  	<h1 class="banner">The Ayurveda Family</h1>
-  	<p class="text-center">This is my blog site dedicated to ayurveda. It's got recipes and videos and advice for making the best dish for your dhosha! Heheheh.</p>
+<div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag ("ayurveda.jpg") %>
+      <div class="carousel-caption">
+        <h1 class="banner">The Ayurvedic Family</h1>
+        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag ("ayurveda10.jpg") %>
+      <div class="carousel-caption">
+        <h1 class="banner">The Ayurvedic Family</h1>
+        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag ("ayurveda8.jpg") %>
+      <div class="carousel-caption">
+        <h1 class="banner">The Ayurvedic Family</h1>
+        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag ("ayurveda9.jpg") %>
+      <div class="carousel-caption">
+        <h1 class="banner">The Ayurvedic Family</h1>
+        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+      </div>
+    </div>
   </div>
+
 </div>
 
+
+<div class="container landing_page_wrap">
+  <h1 class="posts-header">Most Recent Posts</h1>
+  <div class="row"> 
+  	<% @posts.each do |post| %> 
+    <div class="col-md-6">
+      <div class="post-date"><strong>Posted <%= post.created_at.strftime("%d %b %y") %></strong></div>
+      <%= image_tag(post.image_url, class: "img-responsive") %>
+      <h2><%= post.title %></h2>
+      <div class="text-center">
+        <%= link_to 'READ', post, class: "btn btn-primary" %>
+      </div>  
+    </div>
+    <% end %>
+  </div>
+
+  <div class="text-center">
+    <%= link_to 'SEE FULL BLOG ARCHIVE', posts_path, class: "btn btn-default archive", role: "button" %>
+  </div>  
+</div>
 
