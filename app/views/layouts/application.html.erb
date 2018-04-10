@@ -15,9 +15,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!--link to bootstrap js after JS include tag because BS depends on JQuery- loaded with all other JS-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for responsive app-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5accde7315e550001323f9de&product=sticky-share-buttons"></script>
   </head>
 
   <body style = "margin:0">
+    <!--<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>-->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,11 +59,31 @@
     </div>
     
     <footer>
+      <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  
+
+
+
       <div class="container-fluid site-footer">
       	<div class="row">
-          <div class="col-md-6 copyright">
-              &copy; 2018 AyurvedaFamily
-          </div>
+          <div class="social-media col-md-6">
+            <a href="https://twitter.com/neochopper" class="twitter-follow-button" data-show-count="false">
+              <i class="fab fa-twitter fa-3x"></i>
+            </a>
+            <div class="fb-share-button" data-href="https://ayurvedafamily.herokuapp.com" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fayurvedafamily.herokuapp.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            
+              <i class="fab fa-facebook fa-3x"></i>
+            
+            <a>
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>  
+            <a>  
+              <i class="fab fa-pinterest fa-3x"></i>
+            </a>  
+          </div> 
+        
+          
           <div class="col-sm-6 search">
             <%= form_with(url: posts_path, method: 'get', local: true) do |form| %>                         
               <div class="input-group"> 
@@ -66,6 +96,9 @@
             <% end %>                
           </div>
         </div>
+        <div class="copyright text-center">
+              &copy; 2018 AyurvedaFamily
+          </div>
       </div>
     </footer>  
     
