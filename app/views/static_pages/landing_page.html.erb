@@ -1,41 +1,43 @@
-<div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
-  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag ("ayurveda.jpg") %>
-      <div class="carousel-caption">
-        <h1 class="banner">The Ayurvedic Family</h1>
-        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+
+<div class="container-fluid">
+  <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag ("ayurveda.jpg") %>
+        <div class="carousel-caption">
+          <h1 class="banner">The Ayurvedic Family</h1>
+          <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag ("ayurveda10.jpg") %>
+        <div class="carousel-caption">
+          <h1 class="banner">The Ayurvedic Family</h1>
+          <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag ("ayurveda8.jpg") %>
+        <div class="carousel-caption">
+          <h1 class="banner">The Ayurvedic Family</h1>
+          <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag ("ayurveda9.jpg") %>
+        <div class="carousel-caption">
+          <h1 class="banner">The Ayurvedic Family</h1>
+          <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
+        </div>
       </div>
     </div>
-    <div class="item">
-      <%= image_tag ("ayurveda10.jpg") %>
-      <div class="carousel-caption">
-        <h1 class="banner">The Ayurvedic Family</h1>
-        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag ("ayurveda8.jpg") %>
-      <div class="carousel-caption">
-        <h1 class="banner">The Ayurvedic Family</h1>
-        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
-      </div>
-    </div>
-    <div class="item">
-      <%= image_tag ("ayurveda9.jpg") %>
-      <div class="carousel-caption">
-        <h1 class="banner">The Ayurvedic Family</h1>
-        <p class="text-center opener">This is my blog site dedicated to ayurveda. It's got recipes and videos<br> and advice for making the best dish for your dhosha! Heheheh.</p>
-      </div>
-    </div>
+
   </div>
 
-</div>
 
 
-<div class="container landing_page_wrap">
   <h1 class="posts-header">Most Recent Posts</h1>
   <div class="row"> 
   	<% @posts.each do |post| %> 

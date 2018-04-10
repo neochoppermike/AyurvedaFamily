@@ -1,22 +1,24 @@
-<div class="container index-wrap">
-  <h1 class="posts-header">Blog Archives</h1>
-  <div class="row"> 
-  	<% @posts.each do |post| %> 
-    <div class="col-md-6">
-      <div class="post-date"><strong>Posted <%= post.created_at.strftime("%d %b %y") %></strong></div>
+<% if @posts.present? %>
+  <div class="container index-wrap">
+    <h1 class="posts-header">Blog Archives</h1>
+    <div class="row"> 
+    	<% @posts.each do |post| %> 
+      <div class="col-md-6">
+        <div class="post-date"><strong>Posted <%= post.created_at.strftime("%d %b %y") %></strong></div>
 
-      <%= image_tag(post.image_url, class: "img-responsive") %>
+        <%= image_tag(post.image_url, class: "img-responsive") %>
 
-      <h2><%= post.title %></h2>
-      <div class="text-center">
-        <%= link_to 'READ', post, class: "btn btn-primary" %>
-      </div>  
+        <h2><%= post.title %></h2>
+        <div class="text-center">
+          <%= link_to 'READ', post, class: "btn btn-primary" %>
+        </div>  
+      </div>
+      <% end %>
     </div>
-    <% end %>
+    <%= link_to 'New Post', new_post_path %>
   </div>
-</div>
-
-<%= link_to 'New Post', new_post_path %>
-
+<% else %>
+  <p class="text-center">No results found</p>
+<% end %>
 
 
