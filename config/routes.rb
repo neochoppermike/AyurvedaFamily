@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :videos
   resources :posts
   get 'static_pages/videos'
 
