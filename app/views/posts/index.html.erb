@@ -15,6 +15,9 @@
       </div>
       <% end %>
     </div>
+    <div class="text-center">
+     <%= will_paginate @posts %> 
+    </div> 
     <%= link_to 'New Post', new_post_path %>
   </div>
 <% else %>

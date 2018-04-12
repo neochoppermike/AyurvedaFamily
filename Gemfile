@@ -35,6 +35,9 @@ gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'will_paginate', '~> 3.1.6'
+
+
 group :production do
   gem 'pg'
 end

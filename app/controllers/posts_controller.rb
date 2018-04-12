@@ -8,7 +8,7 @@ class PostsController < ApplicationController
       search_term = params[:q]
       @posts = Post.search(search_term)       
     else
-      @posts = Post.all
+      @posts = Post.paginate(:page => params[:page], :per_page => 4)
     end
   end
 

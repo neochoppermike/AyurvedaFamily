@@ -232,3 +232,31 @@ li {
 	margin: auto;
 }
 
+/*------------pagination---------------*/
+
+
+.pagination {
+  background: white;
+  padding: 8px;
+  
+
+  span, em, a {
+    padding: 8px;
+    color: #4d4d4d;
+  }
+  
+  a:hover {
+    background-color: #b6b835;
+    color: #4d4d4d;
+    text-decoration: none;
+  }
+  
+  .previous_page { background:white; color:#4d4d4d; }
+  .current { background: #e8df7a; color:#4d4d4d;}
+  .next_page { background: white; color:#4d4d4d; }
+  
+  .disabled {
+    display:none;
+  }
+
+}

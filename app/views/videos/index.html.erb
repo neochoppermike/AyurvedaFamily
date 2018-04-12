@@ -1,29 +1,22 @@
-<p id="notice"><%= notice %></p>
+<% if @videos.present? %>
+  <div class="container index-wrap">
+    <h1 class="videos-header">Video Archives</h1>
+    <div class="row"> 
+      <% @videos.each do |video| %> 
+      <div class="col-md-6">
+        <div class="post-date"><strong>Posted <%= video.created_at.strftime("%d %b %y") %></strong></div>
 
-<h1>Videos</h1>
+        <div class="video-frame">
+        </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @videos.each do |video| %>
-      <tr>
-        <td><%= video.title %></td>
-        <td><%= video.description %></td>
-        <td><%= link_to 'Show', video %></td>
-        <td><%= link_to 'Edit', edit_video_path(video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Video', new_video_path %>
+        <h2><%= video.title %></h2> 
+        <p><%= video.description %></p>
+      </div>
+      <% end %>
+    </div>
+    <%= link_to 'New Video', new_video_path %>
+  </div>
+<% else %>
+  <p class="text-center">No results found</p>
+  <%= link_to 'New Video', new_video_path %>
+<% end %>
