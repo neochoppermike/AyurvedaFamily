@@ -3,17 +3,17 @@
 
 @font-face {
 	font-family: Nastar;
-	src: url('/assets/Nastar');
+	src: asset-url('Nastar');
 }
 
 @font-face {
 	font-family: Reading Regular;
-	src: url('/assets/Reading_Regular');
+	src: asset-url('Reading_Regular');
 }
 
 @font-face {
 	font-family: Stay Wildy;
-	src: url('/assets/Stay_Wildy');
+	src: asset-url('Stay_Wildy');
 }
 
 
@@ -121,7 +121,7 @@ p {
 
 .about-wrap {
 	height: 95em;
-	background-image: url("ayurveda6.jpg");
+	background-image: asset-url('ayurveda6.jpg');
 	background-size: 100%;
 	background-repeat: repeat-y;
     margin-bottom: 150px;
