@@ -131,13 +131,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
 .banner {
 	font-size: 500%;
 	color: white;
@@ -195,7 +188,10 @@ li {
 	color: white;
 }
 
-
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+	color: black;
+	background-color: #94b586;
+}
 
 .navbar-default .navbar-brand {
 	color: black;
