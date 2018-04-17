@@ -6,7 +6,7 @@
       <div class="col-md-6">
         <div class="post-date"><strong>Posted <%= video.created_at.strftime("%d %b %y") %></strong></div>
 
-        <iframe width="500" height="350" src="<%= @video.url %>" frameborder="0" allowfullscreen></iframe>
+        <iframe width="500" height="350" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
         <h2><%= video.title %></h2> 
         <p><%= video.description %></p>
       </div>
