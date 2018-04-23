@@ -1,0 +1,374 @@
+/* line 1, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/michael/AyurvedaFamily/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+@font-face {
+  font-family: Nastar;
+  src: url(/assets/Nastar-2fe8892db19ca03e610d18e1777936d193f72059a68b2301e281aed7b5afdd59.ttf);
+}
+@font-face {
+  font-family: Reading Regular;
+  src: url(/assets/Reading_Regular-2c6074e7734a0b73f2453313f7ad4a5e01296ba4ce6e461114c0cf38d612d738.ttf);
+}
+@font-face {
+  font-family: Stay Wildy;
+  src: url(/assets/Stay_Wildy-ea750cf85a1fb4ae749958baa64206eb8d7f14d4f210a5c5e2478d8afc41a67b.ttf);
+}
+/* line 20, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+h1, h2 {
+  font-family: Quattrocento;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 2em;
+}
+
+/* line 28, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-size: 400%;
+}
+
+/* line 33, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+p {
+  padding: 20px;
+  font-family: Quattrocento Sans;
+  color: #323232;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: Normal;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 46, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.yield {
+  margin-bottom: 150px;
+}
+
+/* line 50, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.posts-header {
+  margin-bottom: 1em;
+}
+
+/* line 54, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.btn-primary {
+  background-color: #e8df7a;
+  border-radius: 0px;
+  border: 0px;
+  margin: 1em 0;
+  font-family: Tajawal;
+  font-size: 200%;
+  padding: 8px 12px 0;
+}
+
+/* line 64, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.btn-primary:hover {
+  background-color: #e8df7a;
+  border-radius: 0px;
+  border: 0px;
+}
+
+/* line 70, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.archive {
+  margin: 3em 0;
+  padding: 2em;
+  font-family: Stay Wildy;
+  font-size: 200%;
+}
+
+/* line 77, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.post-date {
+  margin-bottom: 1em;
+}
+
+/*-----------------carousel--------------------*/
+/* line 85, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.carousel.fade {
+  opacity: 1;
+}
+
+/* line 89, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  /* hide all slides */
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 101, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 1;
+  /* show first slide */
+  position: relative;
+}
+
+/* line 106, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+/* line 110, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-65%);
+  bottom: initial;
+}
+
+/*-----------------page-stylings-------------*/
+/* line 122, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+body {
+  margin-bottom: 150px;
+}
+
+/* line 126, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.about-wrap {
+  height: 95em;
+  background-image: url(/assets/ayurveda6-9464971d14f93ddb10175fa0080505dcce67ec0adeaeda04bfaf9bd170d982d2.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+/* line 134, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.banner {
+  font-size: 500%;
+  color: white;
+  padding-top: 2em;
+}
+
+/* line 141, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.opener {
+  margin: auto;
+  color: white;
+}
+
+/* line 147, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.white-copy {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 154, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.contact-wrap {
+  height: 95em;
+  background-image: url(/assets/ayurveda7-b754305a351c379963b9bc6b4c01f6f657854aad9f4731d46f26f4a2577773f2.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+/*--------------navbar---------------*/
+/* line 168, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  font-family: Stay Wildy;
+  font-size: 300%;
+}
+
+/* line 173, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+li {
+  font-family: Tajawal;
+}
+
+/* line 177, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  background-color: #94b586;
+  height: 100px;
+  margin-bottom: 0;
+  border: 0px;
+  border-radius: 0px;
+}
+
+/* line 185, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a {
+  margin-top: 20px;
+  font-size: 150%;
+  color: white;
+}
+
+/* line 191, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+  color: black;
+  background-color: #94b586;
+}
+
+/* line 196, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-brand {
+  color: black;
+}
+
+/*---------------footer-------------*/
+/* line 203, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  margin-top: 2em;
+}
+
+/* line 208, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #d2c9b0;
+  padding: 0 3em;
+  margin-top: 5em;
+}
+
+/* line 218, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.search {
+  margin-top: 2em;
+}
+
+/*-------facebook comments-----------*/
+/* line 225, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.fb-comments {
+  margin: auto;
+}
+
+/*------------pagination---------------*/
+/* line 232, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination {
+  background: white;
+  padding: 8px;
+}
+/* line 237, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination span, .pagination em, .pagination a {
+  padding: 8px;
+  color: #4d4d4d;
+}
+/* line 242, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination a:hover {
+  background-color: #b6b835;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+/* line 248, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination .previous_page {
+  background: white;
+  color: #4d4d4d;
+}
+/* line 249, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination .current {
+  background: #e8df7a;
+  color: #4d4d4d;
+}
+/* line 250, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination .next_page {
+  background: white;
+  color: #4d4d4d;
+}
+/* line 252, /home/michael/AyurvedaFamily/app/assets/stylesheets/static_pages.scss */
+.pagination .disabled {
+  display: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
