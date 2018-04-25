@@ -10,7 +10,7 @@ class PostsController < ApplicationController
     else
       @posts = Post.all
     end  
-    @posts = @posts.paginate(:page => params[:page], :per_page => 4)
+    @posts = @posts.paginate(:page => params[:page], per_page: 4)
   end
 
   # GET /posts/1
