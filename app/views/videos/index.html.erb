@@ -5,9 +5,13 @@
       <% @videos.each do |video| %> 
       <div class="col-md-6">
         <div class="post-date"><strong>Posted <%= video.created_at.strftime("%d %b %y") %></strong></div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-        <iframe width="500" height="350" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+        <%= link_to video do %>
         <h2><%= video.title %></h2> 
+        <% end %>
         <p><%= video.description %></p>
       </div>
       <% end %>

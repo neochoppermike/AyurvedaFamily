@@ -1,12 +1,12 @@
-<iframe width="500" height="350" src="<%= @video.url %>" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9 showvid">
+  <iframe class="embed-responsive-item" src="<%= @video.url %>" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<p>
-  <strong>Title:</strong>
+<h2>
   <%= @video.title %>
-</p>
+</h2>
 
-<p>
-  <strong>Description:</strong>
+<p class="text-center">
   <%= @video.description %>
 </p>
 

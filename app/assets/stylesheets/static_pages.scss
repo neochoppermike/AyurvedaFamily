@@ -158,10 +158,19 @@ body {
 	background-repeat: repeat-y; 
 }
 
+.showpage-wrap {
+	width: 100%;
+}
+
+.showvid {
+	margin: 20px;
+}
 
 
-
-
+a h2:hover {
+	color: black;
+	text-decoration: none;
+} 
 
 /*--------------navbar---------------*/
 
@@ -254,3 +263,4 @@ li {
   }
 
 }
+
