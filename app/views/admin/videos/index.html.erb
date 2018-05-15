@@ -16,9 +16,12 @@
       </div>
       <% end %>
     </div>
+    <%= link_to 'New Video', new_admin_video_path %>
     
     
   </div>
 <% else %>
   <p class="text-center">No results found</p>
+  <%= link_to 'New Video', new_admin_video_path %>
+  
 <% end %>
