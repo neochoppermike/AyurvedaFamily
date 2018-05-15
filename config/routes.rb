@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   resources :videos
-  resources :posts
+  resources :posts, only: [:index, :show]
+
+  namespace :admin do
+    resources :posts
+    resources :videos
+  end
+
   get 'static_pages/videos'
 
   get 'static_pages/landing_page'

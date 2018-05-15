@@ -1,0 +1,13 @@
+<%= @posts.each do |post| %>
+  <div class="col-md-6 col-xs-12"> 
+      <%= image_tag(post.image_url, class: "img-responsive") %>
+     
+      <h1><%= post.title %></h1>
+      <%= link_to 'Read', [:admin, post], class: "btn btn-primary" %>
+   
+  </div><!-- /col-->
+<% end %>
+
+ 
+	    
+	  

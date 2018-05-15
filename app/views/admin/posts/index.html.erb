@@ -10,7 +10,7 @@
 
         <h2><%= post.title %></h2>
         <div class="text-center">
-          <%= link_to 'READ', post, class: "btn btn-primary" %>
+          <%= link_to 'READ', [:admin, post], class: "btn btn-primary" %>
         </div>  
       </div>
       <% end %>
@@ -18,9 +18,9 @@
     <div class="text-center">
      <%= will_paginate @posts %> 
     </div> 
+    <%= link_to 'New Post', new_admin_post_path %>
   </div>
 <% else %>
   <p class="text-center">No results found</p>
+  <%= link_to 'New Post', new_admin_post_path %>
 <% end %>
-
-
