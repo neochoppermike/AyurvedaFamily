@@ -71,7 +71,7 @@
               &copy; 2018 AyurvedaFamily
           </div>
           <div class="col-sm-6 search">
-            <%= form_with(url: posts_path, method: 'get', local: true) do |form| %>                         
+            <%= form_with(url: search_index_path, method: 'get', local: true) do |form| %>                         
               <div class="input-group"> 
                 <%= form.text_field :q, id: 'q', class: "form-control", value: params[:q], placeholder: "Search for..."   %>
                 

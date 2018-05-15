@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :videos, only: [:index, :show]
   resources :posts, only: [:index, :show]
+  resources :search, only: [:index]
 
   namespace :admin do
     resources :posts

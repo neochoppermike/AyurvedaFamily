@@ -1,0 +1,19 @@
+<% if @search_results.present? %>
+  <div class="container index-wrap">
+    <h1 class="posts-header">Blog/Video Archives</h1>
+    <div class="row"> 
+      <% @search_results.each do |search_result| %>
+        <% if search_result.is_a? Post %>
+          <%= render partial: 'post', locals: { post: search_result } %>
+        <% else %>
+          <%= render partial: 'video', locals: { video: search_result } %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="text-center">
+     <%= will_paginate @search_results %> 
+    </div> 
+  </div>
+<% else %>
+  <p class="text-center">No results found</p>
+<% end %>
