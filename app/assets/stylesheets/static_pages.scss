@@ -87,7 +87,7 @@ p {
 }
 
 .carousel.fade .item {
-    transition: opacity ease-out .7s;
+    transition: opacity ease-out 2s;
     left: 0;
     opacity: 0; /* hide all slides */
     top: 0;

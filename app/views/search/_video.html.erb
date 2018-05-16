@@ -1,11 +1,11 @@
   <div class="col-md-6">
     <div class="post-date"><strong>Posted <%= video.created_at.strftime("%d %b %y") %></strong></div>
-
-    <%= image_tag(video.url, class: "img-responsive") %>
-
+		<div class="embed-responsive embed-responsive-16by9 showvid">
+		  <iframe class="embed-responsive-item" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+		</div>
     <h2><%= video.title %></h2>
     <div class="text-center">
-      <%= link_to 'READ', video, class: "btn btn-primary" %>
+      <%= link_to 'View', video, class: "btn btn-primary" %>
     </div>  
   </div>
   
